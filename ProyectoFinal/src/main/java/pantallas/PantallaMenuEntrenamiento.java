@@ -77,6 +77,18 @@ public class PantallaMenuEntrenamiento extends JPanel {
 		});
 
 		JButton botonOp4 = new BotonMenu("Crear Rutinas");
+		botonOp4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+					if(ventana.usuarioLogeado.getEntrenamiento()==null||ventana.usuarioLogeado.getNivel()==0) {
+						JOptionPane.showMessageDialog(ventana,"Selecciona tu nivel y tu entrenamiento","Error",JOptionPane.ERROR_MESSAGE);
+						
+					}
+					else {
+						ventana.cambiarAPantalla("crearRutina");
+					}
+			}
+		});
 		botonOp4.setSize(180, 29);
 
 		JButton botonOp3 = new BotonMenu("Mis rutinas");

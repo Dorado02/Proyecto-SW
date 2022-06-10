@@ -245,7 +245,7 @@ public class PantallaMenuCrearRutina extends JPanel{
 					smt.executeUpdate(
 							"Update Ejercicio_Dinamico set repeticiones = " + comboRepeticiones.getSelectedItem() + ",series ="+comboSeries.getSelectedItem()+" where nombre = '" + comboEjercicios.getSelectedItem() + "';");
 					
-					EjercicioDinamico ejD = new EjercicioDinamico((String) comboEjercicios.getSelectedItem(), (Byte)comboSeries.getSelectedItem(), (Byte)comboRepeticiones.getSelectedItem());
+					
 					
 				} catch (SQLException e1) {
 					// TODO Auto-generated catch block
@@ -262,7 +262,7 @@ public class PantallaMenuCrearRutina extends JPanel{
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		lblNewLabel.setForeground(Color.WHITE);
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\2DAM\\Downloads\\calistenia (1).jpg"));
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\2DAM\\Documents\\GitHub\\Proyecto-SW\\ProyectoFinal\\calistenia.jpg"));
 		lblNewLabel.setBounds(0, -65, 878, 525);
 		panel_1.add(lblNewLabel);
 
